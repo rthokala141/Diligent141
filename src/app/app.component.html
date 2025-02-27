@@ -1,0 +1,72 @@
+<div class="headermain">
+    <p-toolbar class="header-toolbar">
+        <!-- Left: Logo -->
+        <div class="left-section">
+            <img src="original_logo.png" alt="Goodwill Logo" class="logo">
+        </div>
+
+        <!-- Right: User Info -->
+        <div class="user-section">
+            <span class="welcome-text box">Welcome, John!</span>
+            <button pButton type="button" label="Sign Out" class="signout-btn box"></button>
+        </div>
+    </p-toolbar>
+
+    <p-carousel [value]="bannerImages" [numVisible]="1" [numScroll]="1" [showNavigators]="false">
+        <ng-template pTemplate="item" let-item>
+            <div class="carousel-item">
+                <img [src]="item" alt="Banner Image">
+            </div>
+        </ng-template>
+    </p-carousel>
+
+    <p-carousel [value]="menuItems" [numVisible]="5" [numScroll]="1" [circular]="false" class="custom-carousel"
+        [showNavigators]="false">
+        <ng-template pTemplate="item" let-item>
+            <div class="carousel-item-menu">
+                <a [routerLink]="item.link" routerLinkActive="active">{{ item.label }}</a>
+            </div>
+        </ng-template>
+    </p-carousel>
+
+    <main class="content">
+        <router-outlet></router-outlet> <!-- Page content will appear here -->
+    </main>
+
+    <div *ngIf="showButton">
+        <p-carousel [value]="footerImages" [numVisible]="1" [numScroll]="1" [showNavigators]="false">
+            <ng-template pTemplate="item" let-item>
+                <div class="carousel-item">
+                    <img class="footerimg" [src]="item" alt="Banner Image">
+                </div>
+            </ng-template>
+        </p-carousel>
+
+
+        <div class="button-wrapper">
+            <button pButton label="Shop Online" class="shop-button"></button>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <footer class="footer">
+            <div class="container grid">
+                <div class="content">
+                    <p class="title Stya">Stay Connected!</p>
+                    <p class="description">If you're not receiving communications about our latest offers, make sure
+                        your notifications are enabled. Visit the My Profile page and update your notification settings
+                        to stay informed about exclusive deals and special promotions!</p>
+                </div>
+                <div class="social-icons">
+                    <p class="title cont">IRS Tax Policy Contact Us</p>
+                    <div class="icons">
+                        <i class="pi pi-facebook"><img src="Facebook icon.png" alt="Facebook" /></i>
+                        <i class="pi pi-instagram"><img src="instagram icon.png" alt="Instagram" /></i>
+                        <i class="pi pi-linkedin"><img src="linkedin icon.png" alt="linkedin" /></i>
+                        <i class="pi pi-youtube"><img src="youtube icon.png" alt="YouTube" /></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>

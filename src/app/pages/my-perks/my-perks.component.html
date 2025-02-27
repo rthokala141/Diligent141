@@ -1,0 +1,215 @@
+
+<div class="perks-dashboard">
+    <div class="side-menu">
+      <ul>
+        <li (click)="togglePerks(1)">Available Perks</li>
+        <li (click)="togglePerks(2)">Redeemed Perks</li>
+        <li (click)="togglePerks(3)">Expired Perks</li>
+      </ul>
+    </div>
+  
+    <div class="perks-table-container">
+      <div *ngIf="selectedPerk === 1">
+        <table class="perks-table Available-Perks">
+          <thead>
+            <tr>
+              <th>Perks</th>
+              <th>Expires</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>50% OFF Color of the Week</td>
+              <td>30 days left</td>
+              <td><a (click)="openPopup()" class="redeem-link">Redeem</a></td>
+            </tr>
+            <tr>
+              <td>$1.49 Saturday Deal</td>
+              <td>2 days left</td>
+              <td><a (click)="openPopup()" class="redeem-link">Redeem</a></td>
+            </tr>
+            <tr>
+              <td>$5 OFF Happy Birthday</td>
+              <td>5 days left</td>
+              <td><a (click)="openPopup()" class="redeem-link">Redeem</a></td>
+            </tr>
+            <tr>
+              <td>30% OFF Promotion</td>
+              <td>10 days left</td>
+              <td><a (click)="openPopup()"  class="redeem-link">Redeem</a></td>
+            </tr>
+            <tr>
+              <td>5% OFF Thrift Day</td>
+              <td>2 days left</td>
+              <td><a (click)="openPopup()" class="redeem-link">Redeem</a></td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>1 days left</td>
+              <td><a (click)="openPopup()" class="redeem-link">Redeem</a></td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>22 days left</td>
+              <td><a (click)="openPopup()" class="redeem-link">Redeem</a></td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>19 days left</td>
+              <td><a (click)="openPopup()" class="redeem-link">Redeem</a></td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>10 days left</td>
+              <td><a (click)="openPopup()" class="redeem-link">Redeem</a></td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>2 days left</td>
+              <td><a (click)="openPopup()" class="redeem-link">Redeem</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+      <div *ngIf="selectedPerk === 2">
+        <table class="perks-table Redeemed-Perks">
+          <thead>
+            <tr>
+              <th>Perks</th>
+              <th>Redeemed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>50% OFF Color of the Week</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>$1.49 Saturday Deal</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>$5 OFF Happy Birthday</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>30% OFF Promotion</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>5% OFF Thrift Day</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>1/1/2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+      <div *ngIf="selectedPerk === 3">
+        <table class="perks-table Expired-Perks">
+          <thead>
+            <tr>
+              <th>Perks</th>
+              <th>Expired</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>50% OFF Color of the Week</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>$1.49 Saturday Deal</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>$5 OFF Happy Birthday</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>30% OFF Promotion</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>5% OFF Thrift Day</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>1/1/2025</td>
+            </tr>
+            <tr>
+              <td>Promotion</td>
+              <td>1/1/2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    <div class="ongoing-perks">
+      <p class="section-heading">Ongoing Perks</p>
+      <div class="perk-card red-card">
+        <p class="op highlight">COLOR OF THE WEEK</p>
+        <p class="op">Receive 50% off of <span class="highlight">RED</span> tagged merchandise!</p>
+      </div>
+      <div class="white-card">
+        <p class="high">SATURDAYS DEALS</p>
+        <p class="opsd"><span class="red">RED</span> tagged merchandise sold for only <strong class="black">$1.49</strong> plus tax.</p>
+      </div>
+    </div>
+  
+  
+</div>
+  
+  
+  <div class="popup-overlay" #popup (click)="closePopup()" *ngIf="isPopupVisible"> 
+    <div class="popup-content" (click)="$event.stopPropagation()">
+      <button class="close-button" (click)="closePopup()">✕</button>
+      <div class="qr-code">
+        <img src="qr-code.png" alt="QR Code" />
+      </div>
+      <h2>$5 OFF</h2>
+      <h2>Happy Birthday</h2>
+      <p>Enjoy $5 Off your purchase at Goodwill Southern Rivers Retail Stores</p>
+      <small>This coupon is valid only at participating Goodwill stores and must be presented at checkout . It is valid for
+        one-time use only and requires a minimum purchase of $5
+        before tax.....</small>
+      <div class="logo">
+        <img src="goodwill_logo.jpg" alt="Goodwill Logo" />
+      </div>
+    </div>
+  </div> 

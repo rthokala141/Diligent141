@@ -1,0 +1,186 @@
+.header-toolbar {
+    padding: 10px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    /* Pushes the right section to the right */
+}
+
+/* Logo Styling (Responsive) */
+.logo {
+    height: auto;
+    max-height: 65px;
+    max-width: 100%;
+}
+
+.box {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+    min-width: 120px;
+    font-size: 14px;
+}
+
+/* Sign Out Link */
+.signout-btn {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+
+.signout-btn:hover {
+    color: red;
+}
+
+//Banner
+.carousel-item img {
+    width: 100%;
+    /* Make the image responsive */
+    // height: 500px;
+}
+
+.footer {
+    background-color: #042d62;
+    color: white;
+    padding: 20px 50px;
+    margin-top: -5px;
+}
+
+.user-section {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cont {
+    text-align: center;
+    font-weight: 100;
+}
+
+.description {
+    font-size: 10px;
+    max-width: 350px;
+    font-family: sans-serif;
+}
+
+.social-icons .icons {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+}
+
+
+.social-icons .icons img {
+    width: 24px;
+    /* Adjust the size as needed */
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+}
+
+
+//Menu
+.custom-carousel .carousel-item-menu {
+    border: 2px solid #f0f0f0;
+    ;
+    /* Adds a border to each menu item */
+    // background-color: #fff; /* Ensures the background is white */
+    padding: 15px;
+    /* Adds spacing inside each box */
+    text-align: center;
+    /* Centers the text */
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    /* Adjusts height to match the required size */
+    margin-top: -10px;
+    /* Slight adjustment to align with the carousel */
+}
+
+.custom-carousel .carousel-item-menu a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    font-size: 14px;
+}
+
+.custom-carousel .carousel-item-menu:hover {
+    background-color: #BDBDBD;
+    /* Slight background change on hover */
+}
+
+.custom-carousel .p-carousel-content {
+    border: none !important;
+    /* Removes default carousel borders */
+}
+
+.custom-carousel .p-carousel-item {
+    flex: 1;
+    /* Ensures equal spacing */
+}
+
+.custom-carousel .p-carousel-items-container {
+    display: flex;
+    justify-content: space-between;
+    /* Ensures spacing between items */
+}
+
+//Shop button
+
+/* Button Wrapper */
+.button-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Button Styling */
+.shop-button {
+    background-color: #007bff;
+    /* Blue color */
+    color: white;
+    font-size: 14px;
+    padding: 12px 70px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.shop-button:hover {
+    background-color: #007bff !important;
+    /* Blue color */
+    color: white !important;
+}

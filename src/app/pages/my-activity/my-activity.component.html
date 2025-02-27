@@ -1,0 +1,112 @@
+<div class="dashboard-container">
+    <!-- Header -->
+    <div class="header">
+      <img src="award-icon.png" alt="User Icon" class="user-icon" />
+      <div class="user-info">
+        <h2>Thank you, John!</h2>
+        <p>Email: yournamewebsite.com</p>
+      </div>
+    </div>
+  
+    <!-- Cards Section -->
+    <div class="cards">
+      <div class="card">
+        <h3>Purchased</h3>
+        <p class="amount">$1,234.56</p>
+        <p>Past 30 days</p>
+        <button pButton label="View"></button>
+      </div>
+      <div class="card">
+        <h3>Saved</h3>
+        <p class="amount">$543.21</p>
+        <p>Past 30 days</p>
+        <button pButton label="View"></button>
+      </div>
+      <div class="card">
+        <h3>Donated</h3>
+        <p class="amount">12</p>
+        <p>Past 30 days</p>
+        <button pButton label="View"></button>
+      </div>
+    </div>
+  
+    <!-- Recent Activity Table -->
+    <!-- <div class="recent-activity">
+      <h3>Recent Activity</h3>
+      <p-table [value]="transactions" [paginator]="true" [rows]="5" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Total</th>
+            <th>Receipt</th>
+          </tr>
+        </ng-template>
+        <ng-template let-transaction pTemplate="body">
+          <tr>
+            <td>{{ transaction.date }}</td>
+            <td>{{ transaction.type }}</td>
+            <td>{{ transaction.location }}</td>
+            <td>{{ transaction.total }}</td>
+            <td><a href="#" class="view-receipt">View Receipt</a></td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div> -->
+
+    <p  class="fs">Recent Activity</p>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Location</th>
+            <th>Total</th>
+            <th>Receipt</th>
+        </tr>
+        <tr>
+            <td>12/16/2024</td>
+            <td>Purchase</td>
+            <td>Midtown Goodwill</td>
+            <td>$2.34</td>
+            <td><a href="#">View Receipt</a></td>
+        </tr>
+        <tr>
+            <td>12/16/2024</td>
+            <td>Purchase</td>
+            <td>Phenix City Goodwill</td>
+            <td>$5.67</td>
+            <td><a href="#">View Receipt</a></td>
+        </tr>
+        <tr>
+            <td>12/16/2024</td>
+            <td>Donation</td>
+            <td>Phenix City Goodwill</td>
+            <td>$1</td>
+            <td><a href="#">View Receipt</a></td>
+        </tr>
+        <tr>
+            <td>12/16/2024</td>
+            <td>Purchase</td>
+            <td>Midtown Goodwill</td>
+            <td>$45.67</td>
+            <td><a href="#">View Receipt</a></td>
+        </tr>
+        <tr>
+            <td>12/16/2024</td>
+            <td>Purchase</td>
+            <td>Midtown Goodwill</td>
+            <td>$3.45</td>
+            <td><a href="#">View Receipt</a></td>
+        </tr>
+    </table>
+    <div class="displaying">
+        <span>Displaying 1 of 1 pages</span>
+    </div>
+    <div class="pagination">
+        <button>Previous</button>
+        <button class="active">1</button>
+        <button>Next</button>
+    </div>
+  </div>
+  

@@ -1,0 +1,61 @@
+<div class="container">
+    <!-- Video Section -->
+    <div class="video-section">
+      <p-card class="video-card">
+        <ng-template pTemplate="content">
+          <img src="myimpact1.png" alt="Video Thumbnail" class="video-thumbnail" />
+        </ng-template>
+      </p-card>
+      <div class="impact-text">
+        <p class="title">Together we’re making an impact!</p>
+        <p class="description">
+          Goodwill transforms lives through the power of work. By donating and shopping, you help fund
+          job training, education, career, and many more services that empower people to reach their full potential.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Cards Section -->
+    <div class="cards-section">
+      <!-- <p-card class="info-card" *ngFor="let card of cards">
+        <ng-template pTemplate="header">
+          <img src="assets/placeholder.png" alt="Card Image" class="card-img" />
+          <img [src]="card.image" alt="{{ card.title }}" />
+        </ng-template>
+        <ng-template pTemplate="content">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+          <button pButton label="Learn More" class="learn-more-btn"></button>
+        </ng-template>
+      </p-card> -->
+      <p-carousel [value]="cards" [numVisible]="4" [numScroll]="1" [showNavigators]="false">
+        <ng-template let-cards pTemplate="item">
+          <div class="info-card">
+            <!-- <img src="Avatar icon.png" alt="User" class="avatar" /> -->
+            <img [src]="cards.image" alt="{{ cards.title}}" class="card-img" />
+            <div class="mycards">
+                <p class="titlecards">{{ cards.title }}</p>
+                <p class="descriptioncards">{{ cards.description }}</p>
+                <button pButton label="Learn More" class="learn-more-btn"></button>
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  
+    <!-- Donations Section -->
+    <h2 class="donations-title">See your donations at work!</h2>
+    <div class="donations-section">
+      <p-carousel [value]="donors" [numVisible]="4" [numScroll]="1">
+        <ng-template let-donor pTemplate="item">
+          <div class="donor-card">
+            <!-- <img src="Avatar icon.png" alt="User" class="avatar" /> -->
+            <img [src]="donor.image" alt="{{ donor.name}}" class="avatar" />
+            <p class="titlecards">{{ donor.name }}</p>
+            <p class="donationcards">{{ donor.description }}</p>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>
+  

@@ -1,0 +1,49 @@
+<p-card class="perks-member-container">
+    <div class="header">
+      <div class="icon">
+        <img src="award-icon.png" alt="Perks Icon" />
+      </div>
+      <div class="title">
+        <p><strong>Perks Member</strong></p>
+        <p class="sd"><strong>Status:</strong> Shopper and Donor</p>
+      </div>
+      <p-button label="Edit Information" class="edit-button"></p-button>
+    </div>
+  
+    <div class="content">
+      <div class="section personal-info left-section">
+        <h3>Personal Information</h3>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Phone:</strong> 706-123-4567</p>
+        <p><strong>Email:</strong> namewebsite.com</p>
+        <p><strong>Birthday:</strong> 12/12</p>
+        <p><strong>Password:</strong> ******** <a href="#">Update</a></p>
+      </div>
+      <div class="divider"></div>
+      <div class="section notifications right-section">
+        <h3>Text Alerts / Email Notifications</h3>
+        <p>Stay in the loop and never miss a deal!</p>
+        <div class="option">
+          <!-- <p-inputSwitch [(ngModel)]="emailNotifications"></p-inputSwitch> -->
+          <input type="radio" id="email" name="notification" checked />
+          <label>Email Notifications</label>
+          <p>Get exclusive deals, store updates,</p> 
+          <p>and special offers straight to your </p>
+            <p> inbox.</p>
+        </div>
+        <div class="option">
+          <!-- <p-inputSwitch [(ngModel)]="smsNotifications"></p-inputSwitch> -->
+          <input type="radio" id="sms" name="notification" />
+          <label>Text Message Alerts</label>
+          <p>Receive quick updates on limited-</p>
+          <p>time promotions and special savings</p>
+          <p> via SMS.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer">
+      <p-button label="Save" class="save-button"></p-button>
+    </div>
+  </p-card>
+  
